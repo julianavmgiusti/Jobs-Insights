@@ -1,5 +1,7 @@
-# from src.counter import count_ocurrences
+from src.counter import count_ocurrences
+path = "src/jobs.csv"
 
 
 def test_counter():
-    pass
+    assert count_ocurrences(path, 'python') == 1639
+    assert count_ocurrences(path, 'javascript') == 122
